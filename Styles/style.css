@@ -190,7 +190,7 @@ svg:hover {
 }
 
 #section2 {
-  min-height: 50vh;
+  min-height: 30vh;
   width: 100%;
 }
 
@@ -548,5 +548,7 @@ svg:hover {
   }
   .skills .skills-container {
     grid-template-columns: repeat(1, 1fr);
+    position: relative;
+    left: 7%;
   }
 }/*# sourceMappingURL=style.css.map */
