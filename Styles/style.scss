@@ -9,6 +9,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   background-image: url("../Pictures/testback.jpg");
   background-repeat: no-repeat;
@@ -169,8 +170,7 @@ svg:hover {
 #section1 #gif:hover {
   transform: scale(1.1);
   transition: 0.4s ease-in-out;
-}
-
+}   
 #section2 {
   min-height: 30vh;
   width: 100%;
@@ -335,6 +335,8 @@ svg:hover {
   width: 23px;
   min-height: 23px;
 }
+
+
 @keyframes movingBorder {
   0% {
     border-color: black;
@@ -387,6 +389,7 @@ svg:hover {
   .container-about .description #description-p {
     font-size: 15px;
     letter-spacing: 1px;
+
   }
   .skills #title-skills {
     font-size: 20px;
