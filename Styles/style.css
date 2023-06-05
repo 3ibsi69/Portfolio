@@ -190,7 +190,7 @@ svg:hover {
 }
 
 #section2 {
-  height: 100vh;
+  min-height: 50vh;
   width: 100%;
 }
 
@@ -236,7 +236,7 @@ svg:hover {
   font-size: 30px;
   font-weight: bold;
   letter-spacing: 3px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   text-decoration-color: rgb(153, 4, 4);
   line-height: 1.5;
   color: red;
@@ -257,7 +257,7 @@ svg:hover {
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
   grid-area: d2;
-  margin: 5%;
+  grid-gap: 20px;
 }
 
 .skills #title-skills {
@@ -277,7 +277,6 @@ svg:hover {
   background-color: rgba(0, 0, 0, 0.5);
   display: inline-block;
   color: white;
-  margin: 10px;
   text-align: center;
   border-radius: 10%;
 }
@@ -289,7 +288,7 @@ svg:hover {
 }
 
 #section3 {
-  min-height: 100vh;
+  min-height: 100px;
   width: 100%;
 }
 
@@ -546,5 +545,8 @@ svg:hover {
   }
   #section3 .container-projects {
     margin-top: 9%;
+  }
+  .skills .skills-container {
+    grid-template-columns: repeat(1, 1fr);
   }
 }/*# sourceMappingURL=style.css.map */
