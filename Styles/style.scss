@@ -74,7 +74,6 @@ svg:hover {
   border-radius: 2px;
 }
 
-
 .navbar .links ul li a:hover {
   color: red;
 }
@@ -85,7 +84,7 @@ svg:hover {
 }
 
 .hover-effect::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -3px;
   left: 0;
@@ -96,9 +95,8 @@ svg:hover {
 }
 
 .hover-effect:hover::after {
-width: 100%;
+  width: 100%;
 }
-
 
 .container {
   text-align: center;
@@ -166,6 +164,15 @@ width: 100%;
   top: 50%;
   transform: translateY(-50%);
 }
+
+.women{
+  position: fixed;
+  bottom: 58%;
+  cursor: pointer;
+  left: 1.9%;
+  width: 50px;
+opacity: 70%;}
+
 .smlinks {
   display: flex;
   flex-direction: column;
@@ -178,25 +185,18 @@ width: 100%;
 }
 #section1 #pcguy {
   position: absolute;
-  bottom: 2%;
+  bottom: 10%;
   cursor: pointer;
-  left: 4%;
+  left: 6%;
   font-size: clamp(1rem, 3vw, 8rem);
+  opacity: 80%;
+
 }
 #section1 #pcguy:hover {
   transform: scale(1.1);
   transition: 0.4s ease-in-out;
 }
-#section1 #gif {
-  position: absolute;
-  bottom: 5%;
-  cursor: pointer;
-  right: 4%;
-}
-#section1 #gif:hover {
-  transform: scale(1.1);
-  transition: 0.4s ease-in-out;
-}   
+
 #section2 {
   min-height: 30vh;
   width: 100%;
@@ -351,7 +351,7 @@ width: 100%;
   border-radius: 10%;
   animation: movingBorder 3.5s infinite;
   margin-left: 5%;
-}
+} 
 .container-projects .project .project-img:hover {
   transform: scale(1.1);
   transition: 0.4s ease-in-out;
@@ -361,6 +361,97 @@ width: 100%;
   width: 23px;
   min-height: 23px;
 }
+#section4{
+  min-height: 100px;
+  width: 100%;
+}
+.container-contact .title {
+  text-align: center;
+  margin-bottom: 7%;
+}
+.container-contact #about {
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 19px;
+  text-decoration-color: rgb(153, 4, 4);
+  line-height: 1.5;
+  color: red;
+}
+
+
+
+.form {
+  max-width: 600px;
+  min-height: 500px;
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 7px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  animation: movingBorder 3.5s infinite;
+  backdrop-filter: blur(50px);
+margin: 70px auto;
+
+}
+
+.form label {
+  font-weight: bold;
+  color: white;
+  
+}
+::placeholder{
+  color: white;
+  opacity: 70%;
+}
+
+.form input,
+.form textarea {
+  width: 60%;
+  padding: 10px;
+  margin-bottom: 65px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-left: 10px;
+  justify-content: center;
+  border: none;
+  align-items: center;
+  border-bottom: 1px solid red;
+  background: transparent;
+  outline: none;
+}
+
+.form textarea {
+  resize: vertical;
+  min-height: 30px;
+  height: 30px;
+}
+.form .btn {
+  width:30%;
+  background-color: #4caf50;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 3px;
+  margin-top: -60px;
+  position: relative;
+  left: 35%;  
+  cursor: pointer;
+}
+ #contact-me{
+  position: absolute;
+  left: 85%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  min-height: 200px;
+  opacity: 70%;
+ }
 
 
 @keyframes movingBorder {
@@ -385,6 +476,10 @@ width: 100%;
     align-items: center;
   }
   .container h1 {
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
+  .container-contact #about {
     font-size: 30px;
     letter-spacing: 1px;
   }
@@ -415,7 +510,6 @@ width: 100%;
   .container-about .description #description-p {
     font-size: 15px;
     letter-spacing: 1px;
-
   }
   .skills #title-skills {
     font-size: 20px;
@@ -454,6 +548,9 @@ width: 100%;
 
 @media only screen and (max-width: 900px) {
   .box-links {
+    display: none;
+  }
+  .women{
     display: none;
   }
   .skills .skills-container {
@@ -532,6 +629,14 @@ width: 100%;
     display: none;
   }
 }
+@media only screen and (max-width: 500px) {
+#contact-me{
+  width: 150px;
+  min-height: 100px;
+
+}
+}
+
 
 @media only screen and (max-width: 435px) {
   #section1 .buttons #about-btn {
@@ -543,12 +648,17 @@ width: 100%;
     justify-content: center;
     align-items: center;
   }
-#section3 .container-projects{
-  margin-top: 9%;
+  #section3 .container-projects {
+    margin-top: 9%;
+  }
+  .skills .skills-container {
+    grid-template-columns: repeat(1, 1fr);
+    position: relative;
+    left: 7%;
+  }
 }
-.skills .skills-container {
-  grid-template-columns: repeat(1, 1fr);
-  position: relative;
-  left: 7%;
-}
+@media only screen and (max-width: 385px) {
+ #contact-me{
+  display: none;
+ }
 }
