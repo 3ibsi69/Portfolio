@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +12,7 @@ html {
 }
 
 body {
-  background-image: url("../Pictures/testback2.jpg");
+  background-image: url(..//Pictures/pet.png);
   background-repeat: no-repeat;
   overflow-x: hidden;
   background-size: cover;
@@ -21,7 +22,7 @@ body {
 
 #arrow {
   color: white;
-  background-color: red;
+  background-color: #FADA5E;
   position: fixed;
   bottom: 0;
   right: 0;
@@ -43,7 +44,7 @@ svg:hover {
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 10px;
   margin-top: 15px;
@@ -60,9 +61,10 @@ svg:hover {
   cursor: pointer;
   font-weight: bold;
   font-size: 25px;
+  margin-left: 7%;
 }
 .navbar .logo span {
-  color: red;
+  color: #FADA5E;
 }
 
 .navbar .links ul {
@@ -78,11 +80,11 @@ svg:hover {
   color: white;
   transition: all 0.3s ease-in-out;
   font-weight: bold;
-  border-radius: 2px;
+  border-radius: 8px;
 }
 
 .navbar .links ul li a:hover {
-  color: red;
+  color: #FADA5E;
 }
 
 .hover-effect {
@@ -97,7 +99,7 @@ svg:hover {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: red;
+  background-color: #FADA5E;
   transition: all 0.5s ease-in-out;
 }
 
@@ -114,9 +116,8 @@ svg:hover {
 }
 
 .container h1 {
-  background: linear-gradient(to right, #fc7676, #681001);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #FADA5E;
+  font-family: "Kanit", sans-serif;
   font-size: 50px;
   font-weight: bold;
   letter-spacing: 3px;
@@ -135,16 +136,16 @@ svg:hover {
 .btn {
   margin-top: 50px;
   padding: 10px 30px;
-  background: linear-gradient(90deg, rgb(156, 2, 2) 34%, rgb(46, 40, 40) 100%);
-  color: white;
   font-size: 20px;
-  font-weight: bold;
   letter-spacing: 2px;
   text-transform: uppercase;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  animation: movingBorder 3.5s infinite;
+  box-shadow: 0 0 5px #FADA5E;
+  background: transparent;
+  border: 1px solid white;
+  color: #FADA5E;
+  font-weight: bold;
 }
 
 .btn:hover {
@@ -154,10 +155,18 @@ svg:hover {
 
 #projects-btn {
   margin-left: 10px;
+  background: transparent;
+  border: 1px solid white;
+  color: #FADA5E;
+  font-weight: bold;
 }
 
 #about-btn {
   margin-right: 10px;
+  background: transparent;
+  border: 1px solid white;
+  font-weight: bold;
+  color: #FADA5E;
 }
 
 .box-links {
@@ -195,20 +204,6 @@ svg:hover {
   margin-bottom: 13px;
 }
 
-#section1 #pcguy {
-  position: absolute;
-  bottom: 10%;
-  cursor: pointer;
-  left: 6%;
-  font-size: clamp(1rem, 3vw, 8rem);
-  opacity: 80%;
-}
-
-#section1 #pcguy:hover {
-  transform: scale(1.1);
-  transition: 0.4s ease-in-out;
-}
-
 #section2 {
   min-height: 30vh;
   width: 100%;
@@ -228,9 +223,9 @@ svg:hover {
   text-decoration: underline;
   text-decoration-thickness: 3px;
   text-underline-offset: 19px;
-  text-decoration-color: rgb(153, 4, 4);
+  text-decoration-color: #FADA5E;
   line-height: 1.5;
-  color: red;
+  color: #FADA5E;
 }
 
 .container-about #about-p {
@@ -257,9 +252,9 @@ svg:hover {
   font-weight: bold;
   letter-spacing: 3px;
   margin-bottom: 60px;
-  text-decoration-color: rgb(153, 4, 4);
+  text-decoration-color: #FADA5E;
   line-height: 1.5;
-  color: red;
+  color: #FADA5E;
 }
 
 .container-about .description #description-p {
@@ -285,24 +280,24 @@ svg:hover {
   font-weight: bold;
   letter-spacing: 3px;
   margin-bottom: 40px;
-  text-decoration-color: rgb(153, 4, 4);
+  text-decoration-color: #FADA5E;
   line-height: 1.5;
-  color: red;
+  color: #FADA5E;
 }
 
 .skills .skills-container .skill {
   padding: 10px;
   border: 1px solid;
-  animation: movingBorder 3.5s infinite;
+  box-shadow: 0 0 5px #FADA5E;
   background-color: rgba(0, 0, 0, 0.5);
   display: inline-block;
   color: white;
   text-align: center;
-  border-radius: 10%;
+  border-radius: 10px;
 }
 
 .skills .skills-container .skill:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgb(0, 0, 0);
   transform: scale(1.1);
   transition: 0.4s ease-in-out;
 }
@@ -326,9 +321,9 @@ svg:hover {
   text-decoration: underline;
   text-decoration-thickness: 3px;
   text-underline-offset: 19px;
-  text-decoration-color: rgb(153, 4, 4);
+  text-decoration-color: #FADA5E;
   line-height: 1.5;
-  color: red;
+  color: #FADA5E;
 }
 
 .container-projects #about-p {
@@ -354,9 +349,9 @@ svg:hover {
   font-weight: bold;
   letter-spacing: 3px;
   margin-bottom: 40px;
-  text-decoration-color: rgb(153, 4, 4);
+  text-decoration-color: #FADA5E;
   line-height: 1.5;
-  color: red;
+  color: #FADA5E;
   margin-top: 5%;
   margin-left: 7%;
   margin-bottom: 3%;
@@ -373,8 +368,8 @@ svg:hover {
 .container-projects .project .project-img {
   width: 100%;
   height: 100%;
-  border-radius: 10%;
-  animation: movingBorder 3.5s infinite;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #FADA5E;
   margin-left: 5%;
 }
 
@@ -408,9 +403,9 @@ svg:hover {
   text-decoration: underline;
   text-decoration-thickness: 3px;
   text-underline-offset: 19px;
-  text-decoration-color: rgb(153, 4, 4);
+  text-decoration-color: #FADA5E;
   line-height: 1.5;
-  color: red;
+  color: #FADA5E;
 }
 
 .form {
@@ -418,11 +413,11 @@ svg:hover {
   min-height: 500px;
   padding: 20px;
   background-color: transparent;
-  border-radius: 7px;
+  border-radius: 10px;
   justify-content: center;
   align-items: center;
   border: 1px solid white;
-  animation: movingBorder 3.5s infinite;
+  box-shadow: 0 0 5px #FADA5E;
   -webkit-backdrop-filter: blur(50px);
           backdrop-filter: blur(50px);
   margin: 70px auto;
@@ -430,7 +425,7 @@ svg:hover {
 
 .form label {
   font-weight: bold;
-  color: white;
+  color: #FADA5E;
 }
 
 ::-moz-placeholder {
@@ -454,9 +449,10 @@ svg:hover {
   justify-content: center;
   border: none;
   align-items: center;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #FADA5E;
   background: transparent;
   outline: none;
+  color: white;
 }
 
 .form textarea {
@@ -467,15 +463,18 @@ svg:hover {
 
 .form .btn {
   width: 30%;
-  background-color: #4caf50;
   color: #fff;
   font-size: 16px;
   border: none;
-  border-radius: 3px;
+  border-radius: 10px;
   margin-top: -60px;
   position: relative;
   left: 35%;
   cursor: pointer;
+  background: transparent;
+  border: 1px solid white;
+  color: #FADA5E;
+  font-weight: bold;
 }
 
 #contact-me {
@@ -488,6 +487,74 @@ svg:hover {
   opacity: 70%;
 }
 
+#section5 {
+  min-height: 50px;
+  width: 100%;
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 90px;
+  display: flex;
+  min-height: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-contact {
+  position: relative;
+  top: 40%;
+  left: 15%;
+  transform: translateY(-50%);
+}
+
+.social-links {
+  position: relative;
+  top: 100%;
+  right: 15%;
+  transform: translateY(-160%);
+}
+
+.footer-contact h1,
+.social-links h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #FADA5E;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#location {
+  width: 20px;
+  min-height: 20px;
+}
+
+#phone {
+  width: 20px;
+  min-height: 20px;
+  margin-right: 5px;
+}
+
+#email {
+  width: 20px;
+  min-height: 20px;
+  margin-right: 5px;
+}
+
+.footer-contact p {
+  font-size: 14px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.footer-contact p span {
+  font-weight: bold;
+}
+
+.social-links a {
+  margin-left: 10px;
+}
+
 @keyframes movingBorder {
   0% {
     border-color: black;
@@ -498,8 +565,8 @@ svg:hover {
     box-shadow: white;
   }
   100% {
-    border-color: red;
-    box-shadow: 0 0 5px red;
+    border-color: #FADA5E;
+    box-shadow: 0 0 5px #FADA5E;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -576,6 +643,22 @@ svg:hover {
   .container-projects #about-p {
     font-size: 15px;
     letter-spacing: 1px;
+  }
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 60px;
+  }
+  .footer-contact {
+    top: auto;
+    left: auto;
+    transform: none;
+    margin-bottom: 40px;
+  }
+  .social-links {
+    top: auto;
+    right: auto;
+    transform: none;
   }
 }
 @media only screen and (max-width: 900px) {
