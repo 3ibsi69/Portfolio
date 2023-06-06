@@ -183,15 +183,6 @@ svg:hover {
   transform: translateY(-50%);
 }
 
-.women {
-  position: fixed;
-  bottom: 58%;
-  cursor: pointer;
-  left: 1.9%;
-  width: 50px;
-  opacity: 70%;
-}
-
 .smlinks {
   display: flex;
   flex-direction: column;
@@ -226,6 +217,7 @@ svg:hover {
   text-decoration-color: #FADA5E;
   line-height: 1.5;
   color: #FADA5E;
+  font-family: "Kanit", sans-serif;
 }
 
 .container-about #about-p {
@@ -255,6 +247,7 @@ svg:hover {
   text-decoration-color: #FADA5E;
   line-height: 1.5;
   color: #FADA5E;
+  font-family: "Kanit", sans-serif;
 }
 
 .container-about .description #description-p {
@@ -283,6 +276,7 @@ svg:hover {
   text-decoration-color: #FADA5E;
   line-height: 1.5;
   color: #FADA5E;
+  font-family: "Kanit", sans-serif;
 }
 
 .skills .skills-container .skill {
@@ -317,6 +311,7 @@ svg:hover {
   font-weight: bold;
   letter-spacing: 3px;
   margin-bottom: 40px;
+  font-family: "Kanit", sans-serif;
   text-transform: uppercase;
   text-decoration: underline;
   text-decoration-thickness: 3px;
@@ -349,6 +344,7 @@ svg:hover {
   font-weight: bold;
   letter-spacing: 3px;
   margin-bottom: 40px;
+  font-family: "Kanit", sans-serif;
   text-decoration-color: #FADA5E;
   line-height: 1.5;
   color: #FADA5E;
@@ -398,6 +394,7 @@ svg:hover {
   font-size: 50px;
   font-weight: bold;
   letter-spacing: 3px;
+  font-family: "Kanit", sans-serif;
   margin-bottom: 40px;
   text-transform: uppercase;
   text-decoration: underline;
@@ -665,9 +662,6 @@ svg:hover {
   .box-links {
     display: none;
   }
-  .women {
-    display: none;
-  }
   .skills .skills-container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -734,12 +728,6 @@ svg:hover {
   }
   .navbar .menu {
     display: flex;
-  }
-  #pcguy {
-    display: none;
-  }
-  #gif {
-    display: none;
   }
 }
 @media only screen and (max-width: 500px) {

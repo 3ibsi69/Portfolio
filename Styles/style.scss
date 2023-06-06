@@ -172,15 +172,6 @@ svg:hover {
   top: 50%;
   transform: translateY(-50%);
 }
-
-.women{
-  position: fixed;
-  bottom: 58%;
-  cursor: pointer;
-  left: 1.9%;
-  width: 50px;
-opacity: 70%;}
-
 .smlinks {
   display: flex;
   flex-direction: column;
@@ -213,6 +204,8 @@ opacity: 70%;}
   text-decoration-color: $yel;
   line-height: 1.5;
   color: $yel;
+  font-family: 'Kanit', sans-serif;
+
 }
 
 .container-about #about-p {
@@ -240,6 +233,8 @@ opacity: 70%;}
   text-decoration-color:$yel;
   line-height: 1.5;
   color: $yel;
+  font-family: 'Kanit', sans-serif;
+
 }
 
 .container-about .description #description-p {
@@ -266,6 +261,8 @@ opacity: 70%;}
   text-decoration-color:$yel;
   line-height: 1.5;
   color: $yel;
+  font-family: 'Kanit', sans-serif;
+
 }
 .skills .skills-container .skill {
   padding: 10px;
@@ -296,6 +293,8 @@ box-shadow: 0 0 5px $yel;
   font-weight: bold;
   letter-spacing: 3px;
   margin-bottom: 40px;
+  font-family: 'Kanit', sans-serif;
+
   text-transform: uppercase;
   text-decoration: underline;
   text-decoration-thickness: 3px;
@@ -326,6 +325,8 @@ box-shadow: 0 0 5px $yel;
   font-weight: bold;
   letter-spacing: 3px;
   margin-bottom: 40px;
+  font-family: 'Kanit', sans-serif;
+
   text-decoration-color: $yel;
   line-height: 1.5;
   color: $yel;
@@ -368,6 +369,8 @@ box-shadow: 0 0 5px $yel;
   font-size: 50px;
   font-weight: bold;
   letter-spacing: 3px;
+  font-family: 'Kanit', sans-serif;
+
   margin-bottom: 40px;
   text-transform: uppercase;
   text-decoration: underline;
@@ -640,9 +643,6 @@ margin: 70px auto;
   .box-links {
     display: none;
   }
-  .women{
-    display: none;
-  }
   .skills .skills-container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -711,12 +711,6 @@ margin: 70px auto;
   }
   .navbar .menu {
     display: flex;
-  }
-  #pcguy {
-    display: none;
-  }
-  #gif {
-    display: none;
   }
 }
 @media only screen and (max-width: 500px) {
