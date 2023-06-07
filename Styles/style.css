@@ -552,6 +552,67 @@ svg:hover {
   margin-left: 10px;
 }
 
+.anim {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.anim:nth-of-type(even) {
+  opacity: 0;
+  transform: translateX(100px);
+}
+
+.anim.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.zoomin {
+  opacity: 0;
+  transform: scale(0);
+  transition: all 1.5s ease;
+}
+
+.zoomin.showz {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.flipup {
+  opacity: 0;
+  transform: rotateX(90deg);
+  transform-origin: bottom;
+  transition: all 1.5s ease;
+}
+
+.flipup:nth-of-type(even) {
+  opacity: 0;
+  transform: rotateX(-90deg);
+  transform-origin: top;
+}
+
+.flipup.showf {
+  opacity: 1;
+  transform: rotateX(0deg);
+}
+
+.slidedown {
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: all 1.5s ease;
+}
+
+.slidedown:nth-of-type(even) {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.slidedown.shows {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @keyframes movingBorder {
   0% {
     border-color: black;
@@ -754,9 +815,17 @@ svg:hover {
     position: relative;
     left: 7%;
   }
+  .form .btn {
+    width: 116px;
+  }
 }
 @media only screen and (max-width: 385px) {
   #contact-me {
     display: none;
+  }
+}
+@media only screen and (max-width: 335px) {
+  .form .btn {
+    left: 15%;
   }
 }/*# sourceMappingURL=style.css.map */
