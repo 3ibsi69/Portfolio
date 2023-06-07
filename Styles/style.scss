@@ -244,7 +244,7 @@ svg:hover {
   letter-spacing: 3px;
   color: white;
   grid-area: d1;
-  word-break: break-all;
+  word-break: break-word;
   width: 95%;
 }
 .skills .skills-container {
@@ -665,6 +665,12 @@ margin: 70px auto;
     margin-bottom: 10%;
     justify-content: center;
     align-items: center;
+  }
+  .project img{
+    background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
   }
   .container-projects .project .project-nb {
     font-size: 20px;
