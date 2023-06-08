@@ -201,21 +201,22 @@
     <div class="form zoomin" >
       <div class="name">
         <label for="name" >Name</label><br>
-        <input type="text" name="name" id="name" placeholder="Enter your name" />
+        <input type="text" name="name" id="name" placeholder="Enter your name" required/>
       </div>
       <div class="email">
         <label for="email" >Email</label><br>
-        <input type="Email" name="Email" id="Email" placeholder="Enter your Email" />
+        <input type="Email" name="Email" id="Email" placeholder="Enter your Email" required/>
       </div>
       <div class="subject">
         <label for="subject">Subject</label><br>
-        <input type="text" name="subject" id="subject" placeholder="Enter your subject" />
+        <input type="text" name="subject" id="subject" placeholder="Enter your subject" required/>
       </div>
       <div class="message">
         <label for="message">Message</label><br>
-        <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message" required></textarea>
       </div>
-      <button onclick="sendEmail(event)" class="btn">Send</button>
+    <div id="preloader"></div>
+      <button onclick="sendEmail(event)" id="btnid"class="btn">Send</button>
       <img src="./Pictures/contact-me.png" id="contact-me" alt="">
 </div>
 </form>
@@ -227,14 +228,14 @@
       <h1>Information</h1>
       <p><img src="./Pictures/location.gif" id="location" alt="" ><span> Address:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia mollitia </p>
       <p><img src="./Pictures/phone.gif" id="phone" alt=""><span>Phone:</span> +216 23 631 633</p>
-      <p><img src="./Pictures/email.gif" alt="" id="email"><span>Email:</span>
+      <p><img src="./Pictures/email.gif" alt="" id="email"><span>Email:</span> a.abbassi21306@pi.tn</p>
       </div>
         <div class="social-links">
           <h1>social-links</h1>
-          <a href="#"><img src="./Pictures/linkedin-ico.png" width="20px" alt=""></a>
-          <a href="#"><img src="./Pictures/github-ico.png" width="20px" alt=""></a>
-          <a href="#"><img src="./Pictures/insta-ico.png" width="20px" alt=""></a>
-          <a href="#"><img src="./Pictures/twitter-ico.png" width="20px" alt=""></a>
+          <a href="https://www.linkedin.com/in/ahmed-abbassi-/" target="_blank"><img src="./Pictures/linkedin-ico.png" width="20px" alt=""></a>
+          <a href="https://github.com/3ibsi69" target="_blank"><img src="./Pictures/github-ico.png" width="20px" alt=""></a>
+          <a href="https://www.instagram.com/abbassiahmed69/" target="_blank"><img src="./Pictures/insta-ico.png" width="20px" alt=""></a>
+          <a href="https://twitter.com/3ibsi_69"  target="_blank"><img src="./Pictures/twitter-ico.png" width="20px" alt=""></a>
         </div>
       </div>
 <hr>
