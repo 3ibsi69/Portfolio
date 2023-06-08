@@ -15,7 +15,7 @@ function sendEmail(event) {
     
     emailjs.send("service_ttcd701", "template_xxu4ucw", params)
       .then(function(res) {
-        alert("Sent Successfully: " + res.status);
+        alert("Email Sent Successfully!");
         location.reload();
       })
       .catch(function(error) {
