@@ -7,7 +7,7 @@ function sendEmail(event){
         message:document.getElementById('message').value
     }
     emailjs.send("service_ttcd701","template_xxu4ucw",params).then(function(res){
-        alert("Sent Successfully");
+        alert("Email Sent Successfully!");
         location.reload();
 })
 }
